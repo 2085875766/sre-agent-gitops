@@ -16,6 +16,7 @@ spec:
     metadata:
       labels: { app: ollama }
     spec:
+      hostNetwork: true
       containers:
       - name: ollama
         image: ollama/ollama:latest
